@@ -3,7 +3,7 @@ CREATE DATABASE smusmy;
 
 \c smusmy;
 
-CREATE TABLE products (
+CREATE TABLE products ( 
   ID SERIAL PRIMARY KEY,
   title VARCHAR,
   brand VARCHAR,
