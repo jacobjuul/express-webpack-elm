@@ -1,6 +1,7 @@
 module Main exposing (..)
 
-import Html exposing (Html, div, text)
+import Html exposing (Html, div, text, nav, header, ul, li, footer)
+import Html.Attributes exposing (class)
 import Html.App
 
 
@@ -32,8 +33,22 @@ view : Model -> Html Msg
 view model =
   let (hello, test) = model
   in
-    div []
-        []
+    div [ class "app-wrapper" ] [
+      header [] [
+        nav [] [
+          ul [] [
+            li [] [ text "home" ]
+            , li [] [ text "products" ]
+            , li [] [ text "About us" ]
+            , li [] [ text "Hmm" ]
+          ]
+        ]
+      ]
+      , div [ class "app-content" ] [
+        text hello
+      ]
+      , footer [] []
+    ]
 
 
 
