@@ -8,12 +8,12 @@ import Html.App
 
 
 type alias Model =
-    String
+    (String, Int)
 
 
 init : ( Model, Cmd Msg )
 init =
-    ( "Hello 4", Cmd.none )
+    ( ("Hello", 4 ), Cmd.none )
 
 
 
@@ -30,8 +30,10 @@ type Msg
 
 view : Model -> Html Msg
 view model =
+  let (hello, test) = model
+  in
     div []
-        [ text model ]
+        []
 
 
 
