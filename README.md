@@ -2,7 +2,7 @@
 
 This is a boilerplate using
 * express
-* webpack
+* webpack with HMRE
 * elm
 * express-jwt
 * jsonwebtokens
