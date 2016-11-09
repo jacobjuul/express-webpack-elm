@@ -1,6 +1,6 @@
 # express-webpack-elm
 
-This is a boilerplate using
+This is a simple boilerplate using
 * express
 * webpack with HMRE
 * elm
@@ -8,3 +8,5 @@ This is a boilerplate using
 * jsonwebtokens
 
 Webpack has been configured to accept react as well.
+
+for questions email me at `jacob.juul@gmail.com`
